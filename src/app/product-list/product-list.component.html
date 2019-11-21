@@ -6,12 +6,15 @@
       {{ product.name }}
       </a>
   </h3>
-  <p *ngIf="product.description">
+
+    <p *ngIf="product.description" else>
     Description: {{ product.description }}
-  </p>
-  <button click="share()">
+    </p>
+    <button (click)="share()">
     Share
-  </button>
+    </button>
+
+  
 </div>
 <!-- 
 Copyright Google LLC. All Rights Reserved.
