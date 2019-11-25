@@ -15,6 +15,16 @@ export class ProductListComponent {
   }
 }
 
+export class ProductAlertsComponent implements OnInit {
+
+  @Input() product;
+  constructor(){}
+    ngOnInit()
+
+    }
+  }
+}
+
 
 /*
 Copyright Google LLC. All Rights Reserved.
